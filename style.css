@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Lora; Enriqueta*/
@@ -34,12 +33,10 @@ main{
     z-index: 1000;
 }
 
-img{
-    width: 139px;
-    height: 40px;
+.img-senai {
+    width: 125px;
+    height: 35px;
     margin-left: 10px;
-    /* margin-top: 10px;
-    margin-left: 10px; */
 }
 
 .navigation nav{
@@ -58,7 +55,7 @@ img{
     text-decoration: none;
     color: black;
     /* gap: 32px; */
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin: 3px;
 }
 
@@ -68,8 +65,9 @@ img{
 }
 
 .div-titulo{ 
-    margin-top: 7rem;
+    margin-top: 6.9rem;
     text-align: center;
+    background-color: #fff;
 }
 
 .imagem1{
@@ -79,7 +77,8 @@ img{
     justify-content: center;
     left: 50%;
     margin-left: 45px;
-    margin-top: 10px
+    margin-top: 10px;
+    margin-bottom: 0.5rem;
 }
 
 .imagem1 img{
@@ -88,17 +87,13 @@ img{
     width: 300px;
 }
 
-.div-titulo p{
-    font-family: "Inter" sans-serif;
-}
-
 .div-topico1{
     /* margin-top: 15px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    background-color: #EFEFEF;
+    background-color: #edede9;
     text-align: justify;
     width: 100%;
     text-align: left;
@@ -108,10 +103,125 @@ img{
 .div-topico1 h2{
     margin-top: 15px;
 }
-.div-topico1 li{
-    padding-bottom: 5px;
+.div-topico1 p{
+    padding-bottom: 15px;
     margin-left: 20px;
     margin-right: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.div-topico2{
+    /* margin-top: 15px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #fff;
+    text-align: justify;
+    width: 100%;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* border-radius: 20px; */
+}
+
+.div-topico2 h2{
+    margin-top: 15px;
+}
+
+.div-topico2 p{
+    padding-bottom: 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+.div-topico3{
+    /* margin-top: 15px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #edede9;
+    text-align: justify;
+    width: 100%;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* border-radius: 20px; */
+}
+
+.div-topico3 h2{
+    margin-top: 15px;
+}
+
+.div-topico3 p{
+    padding-bottom: 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+.div-topico4{
+    /* margin-top: 15px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #fff;
+    text-align: justify;
+    width: 100%;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* border-radius: 20px; */
+}
+
+.div-topico4 h2{
+    margin-top: 15px;
+}
+
+.div-topico4 p{
+    padding-bottom: 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+.div-topico5{
+    /* margin-top: 15px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #edede9;
+    text-align: justify;
+    width: 100%;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* border-radius: 20px; */
+}
+
+.div-topico5 h2{
+    margin-top: 15px;
+}
+
+.div-topico5 p{
+    padding-bottom: 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contato-item {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.contato-item p{
+    font-family: "Montserrat" sans-serif;
+}
+
+.contato-item i{
+    color: black;
+    font-size: 1.5rem;
 }
 
 footer{
