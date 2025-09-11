@@ -17,7 +17,7 @@ body {
 }
 
 main {
-    margin-top: 125px;
+    margin-top: 100px;
 }
 
 .div-header {
@@ -54,8 +54,8 @@ main {
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
     color: black;
-    /* gap: 32px; */
-    font-size: 1.1rem;
+    gap: 16px;
+    font-size: 0.98rem;
     margin: 3px;
 }
 
@@ -94,7 +94,7 @@ main {
 /* Hero */
 .hero {
     text-align: center;
-    padding: 30px 20px;
+    padding: 30px 0;
     background: #f4f4f4;
 }
 
@@ -168,7 +168,39 @@ main {
     color: #0070c9;
 }
 
-
-footer {
+.contatos{
+    display: grid;
+    /* grid-template-columns: repeat(1, minmax(100px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.3rem;
     text-align: center;
+    padding: 1.1rem;
+    background-color: #212121;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.contatos i{
+    font-size: 30px;
+    color: #0066cc;
+    transition: all 250ms ease-in-out;
+}
+
+.contatos i:hover{
+    font-size: 32px;
+    color: #0052a5;
+}
+
+.contato-item{
+    padding: 2px;   
+}
+
+.contato-item p{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.contato-item .email{
+    font-size: 12px;
+    color: rgb(220, 220, 220);
 }
