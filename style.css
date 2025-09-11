@@ -87,6 +87,11 @@ main{
     width: 300px;
 }
 
+.img-rb1 img{
+    width: 134px;
+    height: 103px;
+}
+
 .div-topico1{
     /* margin-top: 15px; */
     display: flex;
@@ -201,6 +206,31 @@ main{
 }
 
 .div-topico5 p{
+    padding-bottom: 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.div-topico6{
+    /* margin-top: 15px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #fff;
+    text-align: justify;
+    width: 100%;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* border-radius: 20px; */
+}
+
+.div-topico6 h2{
+    margin-top: 15px;
+}
+
+.div-topico6 p{
     padding-bottom: 15px;
     margin-left: 20px;
     margin-right: 10px;
