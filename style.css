@@ -1,26 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-/* Lora; Enriqueta*/
 
-
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     background-color: rgb(255, 255, 255);
     width: 390px;
     height: 844px;
     min-width: 390px;
 }
 
-main{
-    margin-top: 125px;
-}
 
-.div-header{
+
+.div-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,18 +36,13 @@ main{
     margin-left: 10px;
 }
 
-.navigation nav{
-    /* position: absolute;
-    width: 170px;
-    right: 0;
-    top: 40px;
-    margin-right: 20px; */
+.navigation nav {
     display: flex;
-    gap: 4px; 
+    gap: 4px;
     margin-right: 7px;
 }
 
-.navigation a{
+.navigation a {
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
     color: black;
@@ -59,208 +51,186 @@ main{
     margin: 3px;
 }
 
-.linha-embaixo{
+.linha-embaixo {
     display: inline-block;
     border-bottom: 2px solid #303030;
 }
 
-.div-titulo{ 
-    margin-top: 6.9rem;
+.div-titulo {
+    position: relative;
+    margin-top: 5rem;
     text-align: center;
-    background-color: #fff;
+    color: #fff;
+    overflow: hidden;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
 }
 
-.div-titulo p{
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.div-titulo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7); 
+    z-index: 2;
+}
+
+
+.div-titulo section {
+    position: relative;
+    z-index: 3;
+    padding: 20px;
+}
+
+.div-titulo section p {
     text-align: justify;
     margin-left: 10px;
     margin-right: 15px;
-}
-.div-topico1 p{
-    text-align: justify;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-bottom: 15px;
-    /* margin-left: 20px;
-    margin-right: 10px; */
-    font-family: "Montserrat", sans-serif;
+    font-weight: bold ;
 }
 
-.imagem1{
-    height: 200px;
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    left: 50%;
-    margin-left: 45px;
-    margin-top: 10px;
-    margin-bottom: 0.5rem;
-}
 
-.imagem1 img{
+
+.imagem1 img {
     border-radius: 15px;
     height: 200px;
     width: 300px;
 }
 
-.img-rb1 img{
+.div-text {
+    text-align: center;
+}
+
+.img-rb2 img {
+    width: 140px;
+    height: 115px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.img-rb1 img {
     border-radius: 10px;
     width: 134px;
     height: 103px;
 }
-.img-rb2 img{
-    
-    width: 134px;
-    height: 103px;
+
+
+.div-topico1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
 }
 
-.div-topico1{
-    /* margin-top: 15px; */
+.img-rb2 img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.img-rb2 img:hover {
+    transform: scale(1.05);
+}
+
+.div-text h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.div-text p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.div-text ul {
+    padding-left: 20px;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+.div-topico3,
+.div-topico5 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
     background-color: #edede9;
-    text-align: justify;
     width: 100%;
-    text-align: left;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    /* border-radius: 20px; */
 }
-.div-topico1 h2{
+
+.div-topico3 h2,
+.div-topico5 h2,
+.div-topico1 h2 {
     margin-top: 15px;
 }
-.div-topico1 p{
-    padding-bottom: 15px;
+
+
+.div-topico3 p,
+.div-topico5 p {
     margin-left: 20px;
-    margin-right: 10px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    text-align: justify;
+    font-size: 15px;
     font-family: "Montserrat", sans-serif;
 }
 
-.div-topico2{
-    /* margin-top: 15px; */
+
+.div-topico6,
+.div-topico4,
+.div-topico2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
     background-color: #fff;
-    text-align: justify;
     width: 100%;
-    text-align: left;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    /* border-radius: 20px; */
 }
 
-.div-topico2 h2{
+.div-topico6 h2,
+.div-topico4 h2,
+.div-topico2 h2 {
     margin-top: 15px;
 }
 
-.div-topico2 p{
-    padding-bottom: 15px;
+.div-topico6 p,
+.div-topico4 p,
+.div-topico2 p {
     margin-left: 20px;
-    margin-right: 10px;
-    font-family: "Montserrat", sans-serif;
-}
-.div-topico3{
-    /* margin-top: 15px; */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    background-color: #edede9;
+    margin-right: 15px;
+    margin-bottom: 15px;
     text-align: justify;
-    width: 100%;
-    text-align: left;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    /* border-radius: 20px; */
-}
-
-.div-topico3 h2{
-    margin-top: 15px;
-}
-
-.div-topico3 p{
-    padding-bottom: 15px;
-    margin-left: 20px;
-    margin-right: 10px;
-    font-family: "Montserrat", sans-serif;
-}
-.div-topico4{
-    /* margin-top: 15px; */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    background-color: #fff;
-    text-align: justify;
-    width: 100%;
-    text-align: left;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    /* border-radius: 20px; */
-}
-
-.div-topico4 h2{
-    margin-top: 15px;
-}
-
-.div-topico4 p{
-    padding-bottom: 15px;
-    margin-left: 20px;
-    margin-right: 10px;
-    font-family: "Montserrat", sans-serif;
-}
-.div-topico5{
-    /* margin-top: 15px; */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    background-color: #edede9;
-    text-align: justify;
-    width: 100%;
-    text-align: left;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    /* border-radius: 20px; */
-}
-
-.div-topico5 h2{
-    margin-top: 15px;
-}
-
-.div-topico5 p{
-    padding-bottom: 15px;
-    margin-left: 20px;
-    margin-right: 10px;
+    font-size: 15px;
     font-family: "Montserrat", sans-serif;
 }
 
-.div-topico6{
-    /* margin-top: 15px; */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    background-color: #fff;
-    text-align: justify;
-    width: 100%;
-    text-align: left;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    /* border-radius: 20px; */
-}
-
-.div-topico6 h2{
-    margin-top: 15px;
-}
-
-.div-topico6 p{
-    padding-bottom: 15px;
-    margin-left: 20px;
-    margin-right: 10px;
-    font-family: "Montserrat", sans-serif;
-}
-
-.contatos{
+.contatos {
     display: grid;
-    /* grid-template-columns: repeat(1, minmax(100px, 1fr)); */
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.3rem;
     text-align: center;
@@ -270,34 +240,34 @@ main{
     color: white;
 }
 
-.contatos i{
+.contatos i {
     font-size: 30px;
     color: #0066cc;
 }
 
-.contatos i:hover{
+.contatos i:hover {
     font-size: 32px;
     color: #0052a5;
     transition: ease-in-out 500ms;
 }
 
-.contatos i:active{
+.contatos i:active {
     font-size: 32px;
     color: #0052a5;
     transition: ease-in-out 500ms;
 }
 
 
-.contato-item{
-    padding: 2px;   
+.contato-item {
+    padding: 2px;
 }
 
-.contato-item p{
+.contato-item p {
     font-weight: bold;
     font-size: 16px;
 }
 
-.contato-item .email{
+.contato-item .email {
     font-size: 12px;
     color: rgb(220, 220, 220);
 }
