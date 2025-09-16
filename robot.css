@@ -1,62 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Lora; Enriqueta*/
-
-
+/* RESET */
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
-body {
-    background-color: rgb(255, 255, 255);
-    width: 390px;
-    height: 844px;
-    min-width: 390px;
+html, body {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #fff;
+    font-family: "Montserrat", sans-serif;
 }
+body p {
+    font-family: "Alegreya Sans";
 
+}
+/* MAIN */
 main {
-    margin-top: 100px;
+    margin-top: 5rem;
 }
 
+/* HEADER */
 .div-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    height: 100px;
+    height: 80px;
     background-color: white;
     box-shadow: 1px 1px 5px black;
     top: 0;
     z-index: 1000;
+    padding: 0 1rem;
 }
 
 .img-senai {
-    width: 125px;
-    height: 35px;
-    margin-left: 10px;
+    width: 120px;
+    height: auto;
 }
 
 .navigation nav {
-    /* position: absolute;
-    width: 170px;
-    right: 0;
-    top: 40px;
-    margin-right: 20px; */
     display: flex;
-    gap: 4px;
-    margin-right: 7px;
+    gap: 12px;
 }
 
 .navigation a {
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
     color: black;
-    gap: 16px;
-    font-size: 0.98rem;
-    margin: 3px;
+    font-size: 0.95rem;
 }
 
 .linha-embaixo {
@@ -64,38 +62,33 @@ main {
     border-bottom: 2px solid #303030;
 }
 
+/* TÍTULO */
 .div-titulo {
-    margin-top: 6.9rem;
+    margin-top: 6.5rem;
     text-align: center;
     background-color: #edede9;
+    padding: 20px 10px;
 }
 
+/* IMAGEM DESTACADA */
 .imagem1 {
-    height: 200px;
-    width: 300px;
     display: flex;
     justify-content: center;
-    left: 50%;
-    margin-left: 45px;
-    margin-top: 10px;
-    margin-bottom: 0.5rem;
+    margin: 10px 0 0.5rem 0;
 }
 
 .imagem1 img {
     border-radius: 15px;
-    height: 200px;
-    width: 300px;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
 }
 
-main {
-    font-family: Arial, sans-serif;
-}
-
-/* Hero */
+/* HERO */
 .hero {
     text-align: center;
-    padding: 30px 0;
-    background: #f4f4f4;
+    padding: 30px 15px;
+    background: #ECEFF4;
 }
 
 .hero h1 {
@@ -104,7 +97,9 @@ main {
 
 .hero-img {
     max-width: 300px;
-    margin: 15px 0;
+    width: 100%;
+    margin: 15px auto;
+    display: block;
 }
 
 .hero p {
@@ -112,7 +107,7 @@ main {
     margin: 0 auto;
 }
 
-/* Sobre */
+/* SOBRE */
 .sobre {
     display: flex;
     gap: 20px;
@@ -125,14 +120,17 @@ main {
 
 .sobre-img img {
     max-width: 250px;
+    width: 100%;
     border-radius: 10px;
+    height: auto;
 }
 
 .sobre-texto {
     max-width: 600px;
+    width: 100%;
 }
 
-/* Especificações e Aplicações */
+/* ESPECIFICAÇÕES / APLICAÇÕES */
 .especificacoes,
 .aplicacoes {
     padding: 40px 20px;
@@ -152,13 +150,14 @@ main {
 }
 
 .card {
-    background: #f0f0f0;
+    background: #F1F5F9;
     padding: 20px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 .card i {
@@ -168,39 +167,87 @@ main {
     color: #0070c9;
 }
 
-.contatos{
+/* CONTATOS (FOOTER) */
+.contatos {
     display: grid;
-    /* grid-template-columns: repeat(1, minmax(100px, 1fr)); */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 1.3rem;
     text-align: center;
-    padding: 1.1rem;
+    padding: 1.5rem;
     background-color: #212121;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
 }
 
-.contatos i{
+.contatos i {
     font-size: 30px;
     color: #0066cc;
     transition: all 250ms ease-in-out;
 }
 
-.contatos i:hover{
-    font-size: 32px;
+.contatos i:hover {
+    transform: scale(1.1);
     color: #0052a5;
 }
 
-.contato-item{
-    padding: 2px;   
+.contato-item {
+    padding: 4px;
 }
 
-.contato-item p{
+.contato-item p {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
-.contato-item .email{
-    font-size: 12px;
+.contato-item .email {
+    font-size: 0.85rem;
     color: rgb(220, 220, 220);
+}
+
+/* RESPONSIVIDADE */
+@media (min-width: 768px) {
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .sobre {
+        flex-wrap: nowrap;
+        text-align: left;
+    }
+
+    .sobre-texto {
+        padding-left: 20px;
+    }
+}
+
+@media (min-width: 900px){
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card{
+        padding: 5px;
+        gap: 5px
+    }
+}
+
+@media (min-width: 410px) {
+    .navigation a{
+        font-size: 1rem;
+    }
+    .div-header{
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: 440px) {
+    .img-senai img{
+        width: 100px;
+    }
+
+    .navigation a{
+        font-size: 1.1rem;
+    }
+    .div-header{
+        padding-right: 20px;
+    }
 }

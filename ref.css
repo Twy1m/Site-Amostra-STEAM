@@ -1,100 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-*{
+/* RESET */
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
-body{
-    padding-top: 125px;    
-    background-color: rgb(255, 255, 255);
-    width: 390px;
-    height: 844px;
-    min-width: 390px;
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 125px;
     background-color: #D9D9D9;
+    font-family: "Lato", sans-serif;
+    width: 100%;
 }
 
-/* main{
-    margin-top: 100px;
-} */
-
-.div-header{
+/* HEADER */
+.div-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    height: 100px;
+    height: 80px;
     background-color: white;
     box-shadow: 1px 1px 5px black;
     top: 0;
     z-index: 1000;
+    padding: 0 1rem;
+}
+
+main{
+    flex: 1;
 }
 
 .img-senai {
-    width: 125px;
-    height: 35px;
-    margin-left: 10px;
+    width: 120px;
+    height: auto;
 }
 
-.navigation nav{
-    /* position: absolute;
-    width: 170px;
-    right: 0;
-    top: 40px;
-    margin-right: 20px; */
+.navigation nav {
     display: flex;
-    gap: 4px; 
-    margin-right: 7px;
+    gap: 12px;
 }
 
-.navigation a{
+.navigation a {
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
     color: black;
-    gap: 16px;
-    font-size: 0.98rem;
-    margin: 3px;
+    font-size: 0.95rem;
 }
 
-.linha-embaixo{
+.linha-embaixo {
     display: inline-block;
     border-bottom: 2px solid #303030;
 }
 
-.container-principal{
+/* CONTEÚDO */
+.container-principal {
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-family: "Lato", sans-serif;
     text-align: center;
 }
 
-h1{
-    font-size: 45px;
-    font-family: "Lato", sans-serif;
-}
-
-.container-ref{
+/* REFERÊNCIAS */
+.container-ref {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 362px;
-    height: 485px;
+    width: 95%;
+    max-width: 800px;
     background-color: #F3F3F3;
-    border-radius: 40px;
+    border-radius: 20px;
     text-align: left;
     margin: 1rem auto;
-    box-shadow: 0px 3px 10px rgb(82, 82, 82);
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-.container-ref ul{
-    margin-top: 30px;
-    font-size: 16px;
-    width: 315px;
-    height: 450px;
+.container-ref ul {
+    font-size: 1.2rem;
+    list-style: disc inside;
 }
 
-.contatos{
+/* FOOTER */
+.contatos {
     display: grid;
-    /* grid-template-columns: repeat(1, minmax(100px, 1fr)); */
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.3rem;
     text-align: center;
@@ -102,29 +101,98 @@ h1{
     background-color: #212121;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
+    flex: 1;
 }
 
-.contatos i{
+.contatos i {
     font-size: 30px;
     color: #0066cc;
-    transition: all 250ms ease-in-out;
 }
 
-.contatos i:hover{
-    font-size: 35px;
+.contatos i:hover {
+    font-size: 32px;
     color: #0052a5;
+    transition: ease-in-out 500ms;
 }
 
-.contato-item{
-    padding: 2px;   
+.contatos i:active {
+    font-size: 32px;
+    color: #0052a5;
+    transition: ease-in-out 500ms;
 }
 
-.contato-item p{
+
+.contato-item {
+    padding: 2px;
+}
+
+.contato-item p {
     font-weight: bold;
     font-size: 16px;
 }
 
-.contato-item .email{
+.contato-item .email {
     font-size: 12px;
     color: rgb(220, 220, 220);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+    
+    .container-ref {
+        padding: 0.8rem;
+    }
+    
+    .container-ref ul{
+        font-size: 1.1rem;
+    }
+    
+    .navigation a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.6rem;
+    }
+    
+    .container-ref {
+        width: 90%;
+        padding: 0.5rem;
+    }
+    
+    .contato-item p {
+        font-size: 14px;
+    }
+    
+    .container-ref ul{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 410px) {
+    .navigation a{
+        font-size: 1rem;
+    }
+    .div-header{
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: 440px) {
+    .img-senai img{
+        width: 100px;
+    }
+
+    .navigation a{
+        font-size: 1.1rem;
+    }
+    .div-header{
+        padding-right: 20px;
+    }
 }

@@ -1,54 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Cossette+Texte:wght@400;700&family=Mate:ital@0;1&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+
+/* "Cossette Texte, Merriweather Sans, Mate, , " */
 
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
+html,body{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body {
-    background-color: rgb(255, 255, 255);
-    width: 390px;
-    height: 844px;
-    min-width: 390px;
+    background-color: #fff;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
+body p{
+    font-family: "Alegreya Sans";
+}
 
-
+/* HEADER */
 .div-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    height: 100px;
+    height: 80px;
     background-color: white;
     box-shadow: 1px 1px 5px black;
     top: 0;
     z-index: 1000;
+    padding: 0 1rem;
 }
 
 .img-senai {
-    width: 125px;
-    height: 35px;
-    margin-left: 10px;
+    width: 120px;
+    height: auto;
 }
 
 .navigation nav {
     display: flex;
-    gap: 4px;
-    margin-right: 7px;
+    gap: 12px;
 }
 
 .navigation a {
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
     color: black;
-    gap: 16px;
-    font-size: 0.98rem;
-    margin: 3px;
+    font-size: 0.95rem;
 }
 
 .linha-embaixo {
@@ -56,17 +67,26 @@ body {
     border-bottom: 2px solid #303030;
 }
 
+/* TÍTULO E VIDEO */
 .div-titulo {
     position: relative;
-    margin-top: 5rem;
+    margin-top: 75px;
     text-align: center;
     color: #fff;
     overflow: hidden;
-    height: 500px;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3px;
+    padding: 20px;
+}
+
+.div-titulo .title.second{
+    margin-top: 7rem;
+}
+
+.div-titulo .hero-text{
+    text-align: center;
 }
 
 .video {
@@ -96,139 +116,77 @@ body {
     z-index: 2;
 }
 
-
 .div-titulo section {
     position: relative;
     z-index: 3;
-    padding: 20px;
+    padding: 15px;
+}
+
+.div-titulo section .texto-baixo {
+    margin-top: 4rem;
+    font-size: 1.8rem;
 }
 
 .div-titulo section p {
     text-align: justify;
-    margin-left: 10px;
-    margin-right: 15px;
-    font-weight: bold ;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1rem;
 }
 
 
-
-.imagem1 img {
-    border-radius: 15px;
-    height: 200px;
-    width: 300px;
-}
-
-.div-text {
-    text-align: center;
-}
-
-.img-rb2 img {
-    width: 140px;
-    height: 115px;
-    border-radius: 10px;
-    margin-left: 10px;
-}
-
-.img-rb1 img {
-    border-radius: 10px;
-    width: 134px;
-    height: 103px;
-}
-
-
-.div-topico1 {
+.robot-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 12px;
+    gap: 18px;
+    padding: 25px;
+    border-radius: 16px;
+    margin: 2rem auto;
+    width: 95%;
+    max-width: 1000px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+    text-align: left;
+    background-color: #f1f5f9;
 }
 
-.img-rb2 img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 8px;
-    transition: transform 0.3s;
+.robot-card h2{
+    text-align: center;
 }
 
-.img-rb2 img:hover {
-    transform: scale(1.05);
+.robot-card.alternate {
+    background-color: #e4e7ec;
 }
 
-.div-text h2 {
-    font-size: 20px;
+.robot-card:hover {
+    transform: translateY(-6px);
+}
+
+.robot-text h2 {
+    font-size: 1.5rem;
     margin-bottom: 10px;
+    font-family: "Merriweather Sans";
 }
 
-.div-text p {
-    font-size: 16px;
+.robot-text p {
+    font-size: 1rem;
     line-height: 1.5;
 }
 
-.div-text ul {
-    padding-left: 20px;
-    margin: 10px 0;
-    text-decoration: none;
+.robot-img img {
+    width: 250px;
+    height: auto;
+    max-height: 200px;
+    border-radius: 12px;
+    object-fit: contain;
+    transition: transform 0.3s;
 }
 
-.div-topico3,
-.div-topico5 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    background-color: #edede9;
-    width: 100%;
+.robot-img img:hover {
+    transform: scale(1.05);
 }
 
-.div-topico3 h2,
-.div-topico5 h2,
-.div-topico1 h2 {
-    margin-top: 15px;
-}
-
-
-.div-topico3 p,
-.div-topico5 p {
-    margin-left: 20px;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    text-align: justify;
-    font-size: 15px;
-    font-family: "Montserrat", sans-serif;
-}
-
-
-.div-topico6,
-.div-topico4,
-.div-topico2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    background-color: #fff;
-    width: 100%;
-}
-
-.div-topico6 h2,
-.div-topico4 h2,
-.div-topico2 h2 {
-    margin-top: 15px;
-}
-
-.div-topico6 p,
-.div-topico4 p,
-.div-topico2 p {
-    margin-left: 20px;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    text-align: justify;
-    font-size: 15px;
-    font-family: "Montserrat", sans-serif;
-}
-
+/* CONTATOS */
 .contatos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -241,15 +199,15 @@ body {
 }
 
 .contatos i {
-    font-size: 30px;
-    color: #0066cc;
-}
-
-.contatos i:hover {
-    font-size: 32px;
-    color: #0052a5;
-    transition: ease-in-out 500ms;
-}
+    font-size: 30px;    
+    color: #0066cc; 
+}   
+    
+.contatos i:hover { 
+    font-size: 32px;    
+    color: #0052a5; 
+    transition: ease-in-out 500ms;  
+}   
 
 .contatos i:active {
     font-size: 32px;
@@ -270,4 +228,40 @@ body {
 .contato-item .email {
     font-size: 12px;
     color: rgb(220, 220, 220);
+} 
+/* MEDIA QUERIES */
+
+@media (min-width: 410px) {
+    .navigation a{
+        font-size: 1rem;
+    }
+    .div-header{
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: 440px) {
+    .navigation a{
+        font-size: 1.1rem;
+    }
+    .div-header{
+        padding-right: 20px;
+    }
+}
+
+@media (min-width: 600px) {
+    .div-topico1,
+    .div-topico2{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .div-titulo title {
+        font-size: 2.2rem;
+        
+    }
+
+    .div-titulo section p {
+        font-size: 1.1rem;
+    }
 }
