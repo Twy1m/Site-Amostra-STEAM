@@ -30,39 +30,54 @@
     <main>
         <div class="div-titulo">
             <div class="video">
-                <video autoplay loop muted>
+                <video autoplay loop muted playsinline webkit-playsinline>
                     <source src="./IMG/videorobo2.mp4" type="video/mp4">
+                    <!-- Video de backup mais leve -->
+                    <source src="./IMG/videorobo2.webm" type="video/webm">
                 </video>
             </div>
             <section>
                 <h1 class="title">O que são robôs industriais?</h1>
-
-                <p class="hero-text">São máquinas programáveis utilizadas principalmente em ambientes de produção industrial para
+                
+                <p class="hero-text">São máquinas programáveis utilizadas principalmente em ambientes de produção
+                    industrial para
                     automatizar tarefas repetitivas, perigosas ou que exigem precisão. Eles fazem parte da automação
                     industrial e ajudam a aumentar a eficiência, a segurança e a qualidade nos processos de fabricação.
                 </p>
-
+                
                 <h1 class="title second">E os robôs colaborativos?</h1>
-
-                <p class="hero-text">Robôs colaborativos, ou cobots, são uma evolução dos robôs industriais tradicionais. Eles foram
+                
+                <p class="hero-text">Robôs colaborativos, ou cobots, são uma evolução dos robôs industriais
+                    tradicionais. Eles foram
                     projetados para trabalhar lado a lado com seres humanos, de forma segura e eficiente. Diferentemente
                     dos robôs industriais convencionais, que operam em áreas isoladas e cercadas. </p>
-            </section>
-        </div>
+                </section>
+            </div>
+            
+            <div class="robot-card">
+                <div class="robot-text">
+                    <h2>Robô Articulado</h2>
+                    <p>Imita os movimentos de um braço humano, com várias articulações. Versátil, é usado em soldagem,
+                        montagem e pintura.</p>
+                </div>
+                <div class="robot-img">
+                    <img src="./IMG/ur3e.webp" alt="Robô Articulado">
+                </div>
+            </div>
 
-        <div class="robot-card">
-            <div class="robot-text">
-                <h2>Robo Cartesiano</h2>
-                <p>Movimenta-se em linhas retas nos eixos X, Y e Z. É ideal para aplicações que exigem precisão, como
-                    manuseio, corte e impressão 3D, manuseio de peças com precisão, corte e soldagem industrial e
-                    impressão 3D de alta precisão.</p>
+            <div class="robot-card alternate">
+                <div class="robot-text">
+                    <h2>Robo Cartesiano</h2>
+                    <p>Movimenta-se em linhas retas nos eixos X, Y e Z. É ideal para aplicações que exigem precisão, como
+                        manuseio, corte e impressão 3D, manuseio de peças com precisão, corte e soldagem industrial e
+                        impressão 3D de alta precisão.</p>
             </div>
             <div class="robot-img">
                 <img src="./IMG/Robo-cartesiano-removebg-preview.png" alt="Robo Cartesiano">
             </div>
         </div>
 
-        <div class="robot-card alternate">
+        <div class="robot-card">
             <div class="robot-text">
                 <h2>Robô Cilíndrico</h2>
                 <p>Combina movimentos lineares e rotações ao redor de um eixo. É usado em tarefas como montagem,
@@ -73,7 +88,7 @@
             </div>
         </div>
 
-        <div class="robot-card">
+        <div class="robot-card alternate">
             <div class="robot-text">
                 <h2>Robô Esférico</h2>
                 <p>Possui um braço que gira e se estende em um movimento esférico. Ideal para alcançar áreas amplas com
@@ -84,16 +99,6 @@
             </div>
         </div>
 
-        <div class="robot-card alternate">
-            <div class="robot-text">
-                <h2>Robô Articulado</h2>
-                <p>Imita os movimentos de um braço humano, com várias articulações. Versátil, é usado em soldagem,
-                    montagem e pintura.</p>
-            </div>
-            <div class="robot-img">
-                <img src="./IMG/ur3e.webp" alt="Robô Articulado">
-            </div>
-        </div>
 
         <div class="robot-card">
             <div class="robot-text">

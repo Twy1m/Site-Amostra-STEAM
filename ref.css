@@ -176,6 +176,10 @@ h1 {
 }
 
 @media (min-width: 410px) {
+    .img-senai{
+        width: 125px;
+    }
+
     .navigation a{
         font-size: 1rem;
     }
@@ -184,9 +188,9 @@ h1 {
     }
 }
 
-@media (min-width: 440px) {
-    .img-senai img{
-        width: 100px;
+@media (min-width: 435px) {
+    .img-senai{
+        width: 130px;
     }
 
     .navigation a{

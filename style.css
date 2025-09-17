@@ -26,7 +26,7 @@ body {
     overflow-x: hidden;
 }
 
-body p{
+main p{
     font-family: "Alegreya Sans";
 }
 
@@ -70,11 +70,11 @@ body p{
 /* TÍTULO E VIDEO */
 .div-titulo {
     position: relative;
+    min-height: 500px;
     margin-top: 75px;
     text-align: center;
     color: #fff;
     overflow: hidden;
-    min-height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -247,13 +247,20 @@ body p{
     .div-header{
         padding-right: 20px;
     }
+    .img-senai{
+        width: 125px;
+    }
 }
 
 @media (min-width: 600px) {
-    .div-topico1,
-    .div-topico2{
+    .robot-card.alternate,
+    .robot-card{
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .div-titulo{
+        height: 700px;
     }
 
     .div-titulo title {
